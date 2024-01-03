@@ -17,6 +17,5 @@ public class LowerCase {
             }
         }
         return answer;
-        //return null;
     }
 }
