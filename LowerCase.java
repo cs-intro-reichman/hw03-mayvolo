@@ -9,11 +9,11 @@ public class LowerCase {
         for(int i=0; i<s.length(); i++) {
             if((s.charAt(i) >= 65) && (s.charAt(i) <= 90)){
                 int asci = s.charAt(i);
-                asci = asci + 32;
+                asci += 32;
                 char charResult = (char) asci;
-                answer = answer + charResult;
+                answer += charResult;
             } else {
-                answer = answer + s.charAt(i);
+                answer += s.charAt(i);
             }
         }
         return answer;
