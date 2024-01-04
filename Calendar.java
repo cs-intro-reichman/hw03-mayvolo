@@ -3,6 +3,7 @@ public class Calendar {
 	static int dayOfMonth = 1;   
 	static int month = 1;
 	static int year = 1900;
+    static int dayOfWeek = 2; // 1.1.1900 was a Monday
 	static int nDaysInMonth = 31; // Number of days in January
 	
 
@@ -20,7 +21,8 @@ public class Calendar {
 	// Advances the date and day-of-the-week.
     // Side effects: changes dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-		dayOfMonth++;
+        dayOfWeek = (dayOfWeek % 7) + 1; // Update day of the week
+        dayOfMonth++;
 		if(dayOfMonth > nDaysInMonth(month, year)) {
 			dayOfMonth = 1;
 			month++;
