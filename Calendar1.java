@@ -7,6 +7,7 @@ public class Calendar1 {
 	static int dayOfWeek = 2;     // 1.1.1900 was a Monday
 	static int nDaysInMonth = 31; // Number of days in January
 	
+	
 	public static void main(String args[]) {
 	   // int debugDaysCounter = 0; 
 		System.out.println(dayOfMonth + "/" + month + "/" + year);
