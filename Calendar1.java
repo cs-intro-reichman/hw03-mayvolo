@@ -8,7 +8,7 @@ public class Calendar1 {
 	static int nDaysInMonth = 31; // Number of days in January
 	
 	public static void main(String args[]) {
-	    int debugDaysCounter = 0; 
+	   // int debugDaysCounter = 0; 
 		System.out.println(dayOfMonth + "/" + month + "/" + year);
 		int specialDay = 0;
 	 	while (year <= 1999) {
@@ -24,16 +24,14 @@ public class Calendar1 {
 				} else {
 					System.out.println(dayOfMonth + "/" + month + "/" + year);
 				}
-	 		debugDaysCounter++;
-	 		
-
+	 		//debugDaysCounter++;
 	 		/*if (debugDaysCounter == 1550) { 
 	 			break;
 	 		} */
         }
 		System.out.println("During the 20th century, " + specialDay + " Sundays fell on the first day of the month");
 	 }
-	
+
 	// Advances the date and day-of-the-week.
     // Side effects: changes dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
@@ -64,7 +62,7 @@ public class Calendar1 {
             }
         }
 	}
-	
+
 	// Returns the number of days in the given month and year.
 	private static int nDaysInMonth(int month, int year) {
 		int days;

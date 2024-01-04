@@ -22,6 +22,5 @@ public class uniquechars {
             }
         }
         return answer;
-        //return null;
     }
 }
